@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress">
+    <description>Custom ruleset for the WordPress</description>
+
+    <!-- For help in understanding this file: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
+    <!-- For help in using PHPCS: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Usage -->
+
+	<!-- What to scan -->
+    <file>./web/app/themes</file>
+    <!-- Ignoring Files and Folders:
+        https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage#ignoring-files-and-folders -->
+    <exclude-pattern>/config</exclude-pattern>
+    <exclude-pattern>/vendor</exclude-pattern>
+    <exclude-pattern>/web/index.php</exclude-pattern>
+    <exclude-pattern>/web/wp-config.php</exclude-pattern>
+    <exclude-pattern>/web/wp</exclude-pattern>
+    <exclude-pattern>/web/app/uploads</exclude-pattern>
+    <exclude-pattern>/web/app/mu-plugins</exclude-pattern>
+    <exclude-pattern>/web/app/plugins</exclude-pattern>
+    <exclude-pattern>/web/app/themes/*/resources/views</exclude-pattern>
+	<exclude-pattern>/web/app/themes/*/vendor</exclude-pattern>
+
+    <!-- How to scan -->
+    <arg value="sp"/> <!-- Show sniff and progress -->
+    <arg name="colors"/> <!-- Show results with colors -->
+    <arg name="basepath" value="."/> <!-- Strip the file paths down to the relevant bit -->
+    <arg name="parallel" value="8"/> <!-- Enables parallel processing when available for faster results. -->
+    <arg name="extensions" value="php"/> <!-- Limit to PHP files -->
+
+    <!-- Rules: Check PHP version compatibility - see
+            https://github.com/PHPCompatibility/PHPCompatibilityWP -->
+    <rule ref="PHPCompatibilityWP"/>
+
+    <!-- For help in understanding this testVersion:
+        https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions -->
+    <config name="testVersion" value="8.0-"/>
+
+    <!-- Rules: WordPress Coding Standards - see
+            https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards -->
+    <rule ref="WordPress-Core">
+		<exclude-pattern>/web/app/themes/*/app/View/Components</exclude-pattern>
+	</rule>
+    <rule ref="WordPress-Docs">
+		<exclude-pattern>/web/app/themes/*/app/View/Components</exclude-pattern>
+	</rule>
+    <rule ref="WordPress-Extra"/>
+
+	<rule ref="Internal.NoCodeFound">
+		<exclude-pattern>/web/app/themes/*/resources/views</exclude-pattern>
+	</rule>
+
+	<!-- Exclude any rules here -->
+	<rule ref="WordPress-Extra">
+        <exclude name="WordPress.Security.EscapeOutput.OutputNotEscaped"/>
+        <exclude name="Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure"/>
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+        <exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+        <exclude name="WordPress.CodeAnalysis.AssignmentInCondition.Found"/>
+        <exclude name="Squiz.Commenting.VariableComment.MissingVar"/>
+    </rule>
+
+    <!-- For help in understanding these custom sniff properties:
+            https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki/Customizable-sniff-properties -->
+    <config name="minimum_supported_wp_version" value="5.0"/>
+
+    <rule ref="WordPress.WP.I18n">
+        <properties>
+            <property name="text_domain" type="array">
+                <element value="sage"/>
+                <element value="default"/>
+				<element value="theme-telescope"/>
+            </property>
+        </properties>
+    </rule>
+
+</ruleset>
