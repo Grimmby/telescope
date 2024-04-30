@@ -1,0 +1,146 @@
+{
+  "__generated__": "⚠️ This file is generated. Do not edit.",
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "background": {
+      "backgroundImage": true
+    },
+    "color": {
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "duotone": [],
+      "palette": [
+        {
+          "color": "#1d4ed8",
+          "name": "Primary",
+          "slug": "primary"
+        },
+        {
+          "color": "#b48e42",
+          "name": "Accent",
+          "slug": "accent"
+        },
+        {
+          "color": "#0a0a0b",
+          "name": "Black",
+          "slug": "black"
+        },
+        {
+          "color": "#ffffff",
+          "name": "White",
+          "slug": "white"
+        },
+        {
+          "color": "#f4f4f5",
+          "name": "Lower",
+          "slug": "lower"
+        },
+        {
+          "color": "#d4d4d8",
+          "name": "Low",
+          "slug": "low"
+        },
+        {
+          "color": "#71717a",
+          "name": "Medium",
+          "slug": "medium"
+        },
+        {
+          "color": "#3f3f46",
+          "name": "High",
+          "slug": "high"
+        },
+        {
+          "color": "",
+          "name": "Higher",
+          "slug": "higher"
+        }
+      ]
+    },
+    "custom": {
+      "spacing": {},
+      "typography": {
+        "font-size": {},
+        "line-height": {}
+      }
+    },
+    "spacing": {
+      "padding": true,
+      "units": [
+        "px",
+        "%",
+        "em",
+        "rem",
+        "vw",
+        "vh"
+      ]
+    },
+    "typography": {
+      "customFontSize": false,
+      "fontFamilies": [
+        {
+          "fontFamily": "Inter",
+          "name": "Inter",
+          "slug": "primary"
+        },
+        {
+          "fontFamily": "Work Sans",
+          "name": "Work Sans",
+          "slug": "secondary"
+        }
+      ],
+      "fontSizes": [
+        {
+          "name": "xs",
+          "size": "12px",
+          "slug": "xs"
+        },
+        {
+          "name": "sm",
+          "size": "14px",
+          "slug": "sm"
+        },
+        {
+          "name": "base",
+          "size": "16px",
+          "slug": "base"
+        },
+        {
+          "name": "md",
+          "size": "18px",
+          "slug": "md"
+        },
+        {
+          "name": "lg",
+          "size": "20px",
+          "slug": "lg"
+        },
+        {
+          "name": "xl",
+          "size": "24px",
+          "slug": "xl"
+        },
+        {
+          "name": "2xl",
+          "size": "30px",
+          "slug": "2xl"
+        },
+        {
+          "name": "3xl",
+          "size": "36px",
+          "slug": "3xl"
+        },
+        {
+          "name": "4xl",
+          "size": "48px",
+          "slug": "4xl"
+        }
+      ]
+    }
+  }
+}
