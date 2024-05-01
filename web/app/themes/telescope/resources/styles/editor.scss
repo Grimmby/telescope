@@ -5,6 +5,8 @@
 @import 'theme/fonts';
 
 .wp-block-post-content {
+	@import 'theme/blocks';
+
 	p, a, button, li, input, select, option, textarea, label, span, strong, div {
 		@apply font-primary;
 	}
