@@ -12,7 +12,7 @@
 		target="{{ ( $type === 'internal' ? '_self' : '_blank' ) }}"
 		@if( $type === 'external' ) rel="noopener noreferrer nofollow" @endif
 		@class([
-			'group flex items-center justify-center gap-2.5 py-2.5 px-5 text-base font-semibold leading-tight text-center border rounded-full transition-all duration-200',
+			'py-2.5 px-5 text-base font-semibold leading-tight text-center border rounded-full transition-all duration-200',
 			'border-primary' => $color === 'primary',
 			'border-white' => $color === 'white',
 			'text-white bg-primary hover:bg-primary-darken hover:border-primary-darken' => $color === 'primary' && $style === 'fill',
