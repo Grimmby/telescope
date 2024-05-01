@@ -8,6 +8,7 @@ const config = {
 		},
 		colors: {
 			'primary': '#1D4ED8',
+			'primary-darken': '#143a9b',
 			'accent': '#B48E42',
 			'black': '#0A0A0B',
 			'white': '#FFFFFF',

@@ -21,6 +21,11 @@
           "slug": "primary"
         },
         {
+          "color": "#143a9b",
+          "name": "Primary-darken",
+          "slug": "primary-darken"
+        },
+        {
           "color": "#b48e42",
           "name": "Accent",
           "slug": "accent"
