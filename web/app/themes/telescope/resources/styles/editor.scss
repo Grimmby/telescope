@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'theme/fonts';
+
 .wp-block-post-content {
-	@import 'theme/fonts';
+	p, a, button, li, input, select, option, textarea, label, span, strong, div {
+		@apply font-primary;
+	}
 }
