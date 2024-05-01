@@ -1,0 +1,68 @@
+/*====================================================
+  ANIMATIONS
+====================================================*/
+/* Preload */
+.preload * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+}
+
+/* Reveal animations */
+.r-opacity { opacity: 0; }
+.in-view.r-opacity { opacity: 1; }
+
+.r-top-2 { transform: translateY(2rem); }
+.r-top-3 { transform: translateY(3rem); }
+
+.r-bottom-2 { transform: translateY(-2rem); }
+.r-bottom-3 { transform: translateY(-3rem); }
+
+.r-left-2 { transform: translateX(2rem); }
+.r-left-3 { transform: translateX(3rem); }
+
+.r-right-2 { transform: translateX(-2rem); }
+.r-right-3 { transform: translateX(-3rem); }
+
+.in-view.r-top-2,
+.in-view.r-top-3,
+.in-view.r-bottom-2,
+.in-view.r-bottom-3,
+.in-view.r-left-2,
+.in-view.r-left-3,
+.in-view.r-right-2,
+.in-view.r-right-3 { transform: none !important; }
+
+.r-clip-down { clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); }
+.in-view.r-clip-down { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+
+.r-clip-up { clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%); }
+.in-view.r-clip-up { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+
+.r-clip-left { clip-path: polygon(0 0, 0 0, 0 100%, 0 100%); }
+.in-view.r-clip-left { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+
+.r-clip-right { clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%); }
+.in-view.r-clip-right { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+
+.r-zoom-in { transform: scale(0); }
+.in-view.r-zoom-in { transform: scale(1); }
+
+.r-zoom-in-min { transform: scale(0.9); }
+.in-view.r-zoom-in-min { transform: scale(1); }
+
+.r-zoom-out { transform: scale(2); }
+.in-view.r-zoom-out { transform: scale(1); }
+
+.r-zoom-out-min { transform: scale(1.1); }
+.in-view.r-zoom-out-min { transform: scale(1); }
+
+.r-unfold-top { transform: translateY(100%) rotateX(-80deg); }
+.in-view.r-unfold-top { transform: none; }
+
+.r-width-0 { width: 0; }
+.in-view.r-width-0 { width: 100%; }
+
+.r-height-0 { height: 0; }
+.in-view.r-height-0 { height: 100%; }
