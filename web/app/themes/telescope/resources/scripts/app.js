@@ -1,11 +1,13 @@
 import domReady from '@roots/sage/client/dom-ready';
 import { animationsScript } from '@scripts/theme/animations';
+import { headerScript } from '@scripts/theme/header';
 
 /**
  * Application entrypoint
  */
 domReady(async () => {
 	animationsScript();
+	headerScript();
 });
 
 /**
