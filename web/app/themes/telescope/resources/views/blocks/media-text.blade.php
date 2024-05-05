@@ -45,7 +45,7 @@
 						<div class="flex flex-wrap items-center justify-center gap-y-2 gap-x-4 transition-all duration-[800ms] ease-out r-opacity r-top-2 reveal-delay-300 scroll-reveal">
 							@while( have_rows( 'buttons' ) )
 								@php the_row(); @endphp
-								<x-button
+								<x-buttons.button
 									:url="get_sub_field( 'button_url' )"
 									:label="get_sub_field( 'button_label' )"
 									:type="get_sub_field( 'button_link_type' )"
