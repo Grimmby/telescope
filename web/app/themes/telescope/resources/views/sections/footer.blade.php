@@ -2,7 +2,7 @@
 
 	<div class="flex flex-wrap items-start justify-between gap-y-12 gap-x-6 w-full max-w-[1280px] mx-auto transition-all duration-500 r-opacity reveal-delay-200 scroll-reveal">
 
-		<a href="{{ home_url('/') }}" title="{{ _x( 'Telescope homepage', 'Accueil Telescope', 'theme-telescope' ) }}"
+		<a href="{{ home_url('/') }}" title="{{ __( 'Accueil Telescope', 'theme-telescope' ) }}"
 			class="js__header-logo shrink-0 block w-[12.5rem]">
 			<x-svg.logo class="size-full object-contain" />
 		</a>
@@ -20,7 +20,7 @@
 			@endphp
 			<div>
 				<p class="mb-6 font-secondary text-[1.125rem] font-semibold">
-					{{ _x( 'Follow us', 'Suivez-nous', 'theme-telescope' ) }}
+					{{ __( 'Suivez-nous', 'theme-telescope' ) }}
 				</p>
 				<x-social-media />
 			</div>
