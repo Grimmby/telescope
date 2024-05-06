@@ -16,6 +16,16 @@ add_filter('excerpt_more', function () {
 });
 
 /**
+ * Add class to prevent transition on load
+ */
+add_filter(
+    'body_class',
+	function ($classes) {
+        return array_merge($classes, array( 'preload' ));
+    }
+);
+
+/**
  * Add style to menu's <a> elements.
  *
  * @source https://developer.wordpress.org/reference/hooks/nav_menu_link_attributes/
