@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@roots/bud-sass": "^6.20.0",
-    "alpinejs": "^3.13.8"
+    "alpinejs": "^3.13.8",
+    "swiper": "^11.1.1"
   }
 }
