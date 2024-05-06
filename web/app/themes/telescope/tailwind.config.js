@@ -37,7 +37,10 @@ const config = {
 			full: '6.25rem',
 		},
 		extend: {
-			colors: {}, // Extend Tailwind's default colors
+			screens: {
+				'xs-2': '550px',
+				'md-2': '850px',
+			},
 		},
 	},
 	plugins: [],
