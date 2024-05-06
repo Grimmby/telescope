@@ -32,10 +32,10 @@
 				<input type="email" placeholder="Votre email"
 					class="w-full sm:min-w-[20rem] min-h-[2.6rem] px-3 rounded-l-full outline-none">
 				<button @class([
-					'py-2.5 px-5 text-base font-semibold leading-tight text-center',
+					'shrink-0 py-2.5 px-5 text-base font-semibold leading-tight text-center',
 					'text-white bg-primary hover:bg-primary-darken border border-primary hover:border-primary-darken rounded-full transition-all duration-200',
 				])>
-					{{ _x( 'Subscribe', 'Je m\'inscris', 'theme-telescope' ) }}
+					{{ __( 'Je m\'inscris', 'theme-telescope' ) }}
 				</button>
 			</div>
 		</div>

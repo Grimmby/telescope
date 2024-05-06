@@ -3,7 +3,7 @@
 <header class="sticky z-50 inset-0 w-full py-4 px-5 bg-white border-b-2 border-lower">
 
 	<div class="js__header-container flex items-center justify-between gap-6 w-full max-w-[1280px] mx-auto">
-		<a href="{{ home_url('/') }}" title="{{ _x( 'Telescope homepage', 'Accueil Telescope', 'theme-telescope' ) }}"
+		<a href="{{ home_url('/') }}" title="{{ __( 'Accueil Telescope', 'theme-telescope' ) }}"
 			class="js__header-logo shrink-0 block w-[12.5rem]">
 			<x-svg.logo class="size-full object-contain" />
 		</a>
