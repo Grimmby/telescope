@@ -36,6 +36,7 @@ add_filter(
 		$acf_block_type_names = array_keys( $acf_block_types );
 		$allowed_block_types = is_array( $allowed_block_types ) ? $allowed_block_types : [];
 		$allowed_block_types = array_merge( $allowed_block_types, $acf_block_type_names );
+		$allowed_block_types = array_merge( $allowed_block_types, array( 'create-block/telescope-blocks' ) );
 
 		return $allowed_block_types;
 	},

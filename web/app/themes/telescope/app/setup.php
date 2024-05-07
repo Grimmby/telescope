@@ -14,6 +14,7 @@ use function Roots\bundle;
  * @return void
  */
 add_action('wp_enqueue_scripts', function () {
+	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.7.1.min.js', array(), '3.7.1', true );
     bundle('app')->enqueue();
 }, 100);
 
@@ -45,7 +46,8 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage'),
+        'header_navigation' => __('Header menu', 'sage'),
+        'footer_navigation' => __('Footer menu', 'sage'),
     ]);
 
     /**

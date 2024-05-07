@@ -1,0 +1,60 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 3,
+	"name": "create-block/telescope-blocks",
+	"version": "0.1.0",
+	"title": "Hero Banner",
+	"category": "telescope-react-blocks",
+	"icon": "align-full-width",
+	"description": "Hero banner block.",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"source": "html",
+			"selector": "h1"
+		},
+		"mediaID": {
+			"type": "number"
+		},
+		"mediaURL": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "src"
+		},
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": ".hero-text"
+		},
+		"linkUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"linkLabel": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"example": {
+		"attributes": {
+			"title": "Visez la lune.",
+			"mediaID": 1,
+			"mediaURL": "https://media.licdn.com/dms/image/C5612AQHNGprX11mi5w/article-cover_image-shrink_720_1280/0/1563613492161?e=2147483647&v=beta&t=HrMBpBIyslPXUMSyT8Uofc1HZkIrLKhCZqsUV2iBFsg",
+			"content": [
+				{
+					"type": "p",
+					"props": {
+						"children": [ "Lorem ipsum dolor sit amet justo hendrerit vivamus pulvinar nulla tellus morbi do cursus." ]
+					}
+				}
+			],
+			"linkLabel": "En savoir plus"
+		}
+	},
+	"textdomain": "telescope-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

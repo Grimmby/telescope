@@ -1,0 +1,10 @@
+/*====================================================
+	HELPERS
+====================================================*/
+.content-container {
+	@apply w-full max-w-[calc(1448px+1.25rem)] mx-auto px-5;
+}
+
+.pointer-events-all {
+	pointer-events: all;
+}
