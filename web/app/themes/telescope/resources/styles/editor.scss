@@ -10,4 +10,19 @@
 	p, a, button, li, input, select, option, textarea, label, span, strong, div {
 		@apply font-primary;
 	}
+
+	img.h-full {
+		height: 100% !important;
+	}
+
+	input.border-none {
+		border: 0 !important;
+	}
+
+	a {
+		text-decoration: none !important;
+	}
+	a.text-white.bg-primary:hover {
+		color: #FFFFFF !important;
+	}
 }
